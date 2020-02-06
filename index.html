@@ -5,6 +5,111 @@
         <script src="/js/eForm.js"></script>
     </head>
     <body>
-        <h1>Welcome!</h1>
+        <!-- NavBar Section -->
+        <div id="navBar" class="navBar e-dark-gray" style="vertical-align: center;">
+            <div>
+                {{!-- Menu Navigation Button --}}
+                <span id="navButton" style="cursor:pointer;float: left;" onclick="toggleSidePanelCover('sideNav', '540px')">&#9776;</span>
+
+                <span style="padding-left: 20px;">{{title}}</span>
+
+                {{!-- User Settings and tools --}}
+                <div id="" style="float: right; display: flex;">
+                    <div>
+                        <!-- <span>Account Stuff</span> -->
+                        <img src="images/icons/img_avatar.png" height="40px" width="40px"
+                            style="border-radius: 50%; border: 2px solid white; cursor: pointer;"
+                            onclick="toggleSidePanelCover('sideOption', '540px')">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Side Profile Pane -->
+        <div id="sideNav" class="sideNavigation e-dark-gray">
+            <a href="javascript:void(0)" class="closeButton" onclick="closeSidePanelCover('sideNav')">&times;</a>
+        </div>
+
+        <div id="sideOption" class="sideNavigation rightNav e-dark-gray">
+            <div>
+                Options Here
+            </div>
+            <hr>
+            <div>
+                <label class="switch-bar">
+                    <input type="checkbox" class="switch-input">
+                    <span class="switch-slider rounded e-light-blue"></span>
+                </label>
+            </div>
+            
+        </div>
+
+        <!-- Popup menus  -->
+        <div id="version-popup" class="panel drop-shadow"
+            style="transition: .65s; z-index: 10; position: absolute; left: 25%; right: 25%; top: -1000px;">
+            <div id="popupTitle" class="strip e-light-blue text-center" style="font-size: 1.4rem"><b>Version</b><button
+                    class="button e-red rounded" style="float: right; margin: 3px; padding: 2 10 2 10;"
+                    onclick="hidePopupMenu('version-popup');">X</button></div>
+            <div class="content">
+                <b>Version:</b> <i>0.3.0</i>
+                <div style="max-height: 200px; overflow: scroll;">
+                    <h3>Change Log:</h3>
+                    <ul>
+                        <li>Some Changes here.</li>
+                        <li>Other changes</li>
+                        <li>I made some changes here</li>
+                        <li>Rice Crispies</li>
+                        <li>I can give you some treats</li>
+                        <li>Computer Changes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phantom Menus -->
+        <div id="subscribe-phantom" class="panel drop-shadow"
+            style="visibility: hidden; opacity: 0; z-index: 11; transition: .5s; position: absolute; left: 25%; right: 25%">
+            <div class="strip e-red text-center"><b>Subscribe to a Channel!</b></div>
+            <div class="content">
+                <p>Put something here later</p>
+            </div>
+        </div>
     </body>
+    <footer>
+        <div class="e-charcoal-gray">
+            <div class="grid-x">
+                <div class="large-4 medium-6 small-12 cell text-center">
+                    <h3>This is a Footer Section</h3>
+                    <p>Test</p>
+                </div>
+    
+                <div class="large-4 medium-6 small-12 cell text-center">
+                    <h3>This is a Footer Section</h3>
+                    <p>Test</p>
+                </div>
+    
+                <div class="large-4 medium-6 small-12 cell text-center">
+                    <h3>This is a Footer Section</h3>
+                    <p>Test</p>
+                </div>
+            </div>
+        </div>
+    
+        <script type="text/javascript">
+            //adjustBaseElements();
+    
+            window.onscroll = function () {
+                navbarShadow();
+            }
+    
+            window.onresize = function(){
+                adjustBaseElements();
+            }
+    
+            window.onchange = function(){
+                adjustBaseElements();
+            }
+        </script>
+    </footer>
+
 </html>
