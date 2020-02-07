@@ -15,7 +15,7 @@
                 <div id="" style="float: right; display: flex;">
                     <div>
                         <!-- <span>Account Stuff</span> -->
-                        <img src="images/icons/img_avatar.png" height="40px" width="40px"
+                        <img src="/images/icons/img_avatar.png" height="40px" width="40px"
                             style="border-radius: 50%; border: 2px solid white; cursor: pointer;"
                             onclick="toggleSidePanelCover('sideOption', '540px')">
                     </div>
@@ -72,6 +72,146 @@
                 <p>Put something here later</p>
             </div>
         </div>
+
+        <div id="baseContent">
+            <div class="blue-gradiant text-center drop-shadow-darker" style="margin-bottom: -10px;">
+                <img src="images/banners/Site-Banner-Red.png" style="margin: auto; max-height: 50%; max-width: 50%;">
+            </div>
+            
+            <!-- Ethereal: Cut Out from the Main Page -->
+            <div class="text-center" style="background: url(images/backgrounds/black-flora-background.png) no-repeat center fixed #425784; background-size: cover; color: white;">
+                {{!-- Use this space for quick social platform pages --}}
+                <hr class="no-border ethereal-hr-top">
+                <h2>Surface Level Elements</h2>
+                <i>Hail to the Infrastructure</i>
+                <br><i>Note: This area is what's referred as the "Ethereal" plane, that's designed to look like material behind/under the main background.</i>
+                <hr class="no-border ethereal-hr-bottom">
+            </div>
+            
+            <div class="grid-container" style="max-width: 100rem;">
+                <div class="grid-x">
+                    <div class="cell large-4">
+                        <div class="panel drop-shadow-darker" style="border: solid #5cadff;">
+                            <img class="verticle-middle" src="/images/450x200/450x200-Media.png" width="100%" alt="Utilize the EoZ Foundation">
+                            <!--450x200-->
+                            <div class="text-center" style="font-size: 120%; background: #5cadff; color:white; margin-bottom: 5px;">
+                                Watch, Listen, Learn, be Entertained!
+                            </div>
+                            <div style="height: 100px;">
+                                <p style="margin-left: 40px; margin-right: 40px;">
+                                    We offer a variety of content to watch! Ranging from a series of tutorials, reviews, dev blogs, geek culture, and various entertainment!
+                                </p>
+                            </div>
+                            <hr style="margin-bottom: 1px; margin-top: 20px;">
+                            <p class="text-center" style="font-size: 130%; margin: 0 10px; color: #5cadff; font-family: brie">
+                                <b>&#128249; Media &#9654;</b>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="cell large-4">
+                        <div class="panel drop-shadow-darker" style="border: solid #5cadff;">
+                            <img class="verticle-middle" src="/images/450x200/450x200-Platform.png" width="100%" alt="Utilize the EoZ Foundation">
+                            <!--450x200-->
+                            <div class="text-center" style="font-size: 120%; background: #5cadff; color:white; margin-bottom: 5px;">
+                                Utilize the EoZ Foundation
+                            </div>
+                            <div style="height: 100px;">
+                                <p style="margin-left: 40px; margin-right: 40px;">
+                                    Use our open packages for various languages and mobile software for the EoZ platform!
+                                </p>
+                            </div>
+                            <hr style="margin-bottom: 1px; margin-top: 20px;">
+                            <p class="text-center" style="font-size: 130%; margin: 0 10px; color: #5cadff; font-family: brie">
+                                <b>&#128214; Documentation &#9654;</b>
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="cell large-4">
+                        <div class="panel drop-shadow-darker" style="border: solid #5cadff;">
+                            <img class="verticle-middle" src="/images/450x200/450x200-Develop.png" width="100%" alt="Utilize the EoZ Foundation">
+                            <!--450x200-->
+                            <div class="text-center" style="font-size: 120%; background: #5cadff; color:white; margin-bottom: 5px;">
+                                Develop With Us!
+                            </div>
+                            <div style="height: 100px;">
+                                <p style="margin-left: 40px; margin-right: 40px;">
+                                    A lot of our programs and projects are open source! Feel free to fork them, learn from them, and make them your own.
+                                </p>
+                            </div>
+                            <hr style="margin-bottom: 1px; margin-top: 20px;">
+                            <p class="text-center" style="font-size: 130%; margin: 0 10px; color: #5cadff; font-family: brie">
+                                <b>&#128187; Program and Create &#9654;</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="grid-container full-width">
+                <div class="grid-x">
+                    <div class="cell large-6">
+                        <div class="panel drop-shadow">
+                            <div class="strip e-light-blue text-center text-medium-large rounded-top">
+                                Latest from Essence of Zen
+                            </div>
+                            <div class="content">
+                                <div class="grid-x">
+                                    <div class="cell large-6">
+                                        <span id="latestEoZVideoThumbnail"></span>
+                                    </div>
+            
+                                    <div class="cell large-6">
+                                        <div id="latestEoZVideoTitle" class="strip e-red text-center"></div>
+                                        <br>
+                                        <span id="latestEoZVideoDescription"></span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <table style="width: 100%;">
+                                    <tbody id="latestEoZVideoTableBody">
+                                        {{!-- generated videoes --}}
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p><i>Likely to change</i></p>
+                        </div>
+                    </div>
+            
+                    <div class="cell large-6">
+                        <div class="panel drop-shadow">
+                            <div class="strip e-light-blue text-center text-medium-large rounded-top">
+                                Latest from Essence of Gaming
+                            </div>
+                            <div>
+                                <table>
+            
+                                </table>
+                            </div>
+                            <p style="text-align: right;"><i>Likely to change</i></p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="grid-x">
+                    <div class="cell large-12">
+                        <div class="panel chin drop-shadow rounded " style="background-color: #5cadff">
+                            <div style="color: white; text-align: center; font-size: 20px;">We're Not Just Located Here!</div>
+                            <div class="panel rounded" style="border: 0px; width: 100%;">
+                                <div class="content">
+                                    Find us on Discord!
+                                </div>
+                            </div>
+                            <!-- You can place text here at the bottom of the chin -->
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
     </body>
     <footer>
         <div class="e-charcoal-gray">
